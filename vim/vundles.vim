@@ -7,6 +7,7 @@ call vundle#rc()
 Bundle "gmarik/vundle"
 Bundle "jby/tmux.vim.git"
 Bundle "scrooloose/nerdtree.git"
+Bundle "altercation/vim-colors-solarized"
 Bundle "ctrlpvim/ctrlp.vim"
 Bundle "xolox/vim-misc"
 Bundle "xolox/vim-session"

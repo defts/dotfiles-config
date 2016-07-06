@@ -31,8 +31,13 @@ let mapleader=","
 " =============== Vundle Initialization ===============
 " This loads all the plugins specified in ~/.vim/vundles.vim
 " Use Vundle plugin to manage all other plugins
-if filereadable(expand("~/.vim/vundles.vim"))
-  source ~/.vim/vundles.vim
+" if filereadable(expand("~/.vim/vundles.vim"))
+"   source ~/.vim/vundles.vim
+" endif
+"
+" =============== Vim-plug Initialization ===============
+if filereadable(expand("~/.vim/vim-plug.vim"))
+  source ~/.vim/vim-plug.vim
 endif
 
 " ================ Turn Off Swap Files ==============

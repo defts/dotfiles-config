@@ -1,2 +1,1 @@
-set rtp+=~/.fzf
-
+nnoremap <space><space> :Files<cr>

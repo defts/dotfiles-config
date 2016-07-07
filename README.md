@@ -1,18 +1,20 @@
 # ZSH 
 
 [FZF link](https://github.com/junegunn/fzf)
+
 [Prezto link](https://github.com/sorin-ionescu/prezto)
 
 # VIM 
 
-[Vundle link](https://github.com/VundleVim/Vundle.vim)
+[Vim-Plug](https://github.com/junegunn/vim-plug)
 
 ```
+npm install -g eslint 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim +PluginInstall +qall
+vim +PlugInstall
 ```
-### VERY IMPORTANT
-you have to go to .vim/plugin/vimproc.vim and do a ./make
 
 # TMUX 
+
+it works ! 
 

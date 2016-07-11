@@ -9,7 +9,7 @@
 [Vim-Plug](https://github.com/junegunn/vim-plug)
 
 ```
-npm install -g eslint 
+npm install -g eslint-cli
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PlugInstall
 ```

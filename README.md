@@ -9,9 +9,9 @@
 [Vim-Plug](https://github.com/junegunn/vim-plug)
 
 ```
-npm install -g eslint-cli
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim +PlugInstall
+npm install -g eslint-cli vim-instant-markdown
+# git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+# vim +PlugInstall
 ```
 
 # TMUX 

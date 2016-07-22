@@ -1,3 +1,5 @@
+tmuxinator/*
+!tmuxinator/sample.yml
 vim/.netrwhist
 vim/sessions
 vim/backups

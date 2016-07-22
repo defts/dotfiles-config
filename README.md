@@ -16,5 +16,7 @@ npm install -g eslint-cli vim-instant-markdown
 
 # TMUX 
 
-it works ! 
+```
+gem install tmuxinator
+```
 

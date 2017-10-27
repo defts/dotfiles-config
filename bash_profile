@@ -22,6 +22,11 @@ for option in autocd globstar; do
 	shopt -s "$option" 2> /dev/null;
 done;
 
+# EXPORT pgpass
+if [ -f "${HOME}/.pgpass" ]; then
+  export PGPASSFILE=${HOME}/.pgpass
+fi;
+
 # GNU core utilities
 if [ -d "$(brew --prefix coreutils)/libexec/gnubin" ]; then
   export PATH=$PATH:"$(brew --prefix coreutils)/libexec/gnubin";
@@ -43,4 +48,12 @@ fi;
 #   source $(brew --prefix nvm)/nvm.sh
 # fi
 
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/ddias/Downloads/google-cloud-sdk/path.bash.inc' ]; then source '/Users/ddias/Downloads/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/ddias/Downloads/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/ddias/Downloads/google-cloud-sdk/completion.bash.inc'; fi
+
+export PATH="/usr/local/sbin:$PATH"
+export PGPASSFILE=${HOME}/.pgpass
 

@@ -14,5 +14,9 @@ Plug 'tpope/vim-fugitive'
 Plug 'sheerun/vim-polyglot'
 Plug 'ervandew/supertab'
 Plug 'suan/vim-instant-markdown'
+Plug 'fatih/vim-go'
+Plug 'SirVer/ultisnips'
+Plug 'ervandew/supertab'
+Plug 'kien/ctrlp.vim'
 
 call plug#end()

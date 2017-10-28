@@ -34,8 +34,8 @@ if [ -d "$(brew --prefix coreutils)/libexec/gnubin" ]; then
 fi;
 
 # Add tab completion for many Bash commands
-if [ -f "$(brew --prefix)/share/bash-completion/bash_completion" ]; then
-  source "$(brew --prefix)/share/bash-completion/bash_completion";
+if [ -f "$(brew --prefix)/etc/bash_completion" ]; then
+  source "$(brew --prefix)/etc/bash_completion";
 fi;
 
 # Enable tab completion for `g` by marking it as an alias for `git`
@@ -43,9 +43,18 @@ if type _git &> /dev/null && [ -f $(brew --prefix)/etc/bash_completion.d/git-com
 	complete -o default -o nospace -F _git g;
 fi;
 
-# if [ -f "$(brew --prefix nvm)/nvm.sh" ]; then
-#   export NVM_DIR="$HOME/.nvm"
-#   source $(brew --prefix nvm)/nvm.sh
+if [ -f "$(brew --prefix nvm)/nvm.sh" ]; then
+  export NVM_DIR="$HOME/.nvm"
+  source $(brew --prefix nvm)/nvm.sh
+fi
+
+if [ -f "$(brew --prefix go)/bin/go" ]; then
+  export GOPATH="$HOME/devel"
+  export PATH=$PATH:$HOME/devel/bin
+fi
+
+# if [ -d "$HOME/.cargo/bin" ]; then
+#   export PATH="$HOME/.cargo/bin:$PATH"
 # fi
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -55,5 +64,5 @@ if [ -f '/Users/ddias/Downloads/google-cloud-sdk/path.bash.inc' ]; then source '
 if [ -f '/Users/ddias/Downloads/google-cloud-sdk/completion.bash.inc' ]; then source '/Users/ddias/Downloads/google-cloud-sdk/completion.bash.inc'; fi
 
 export PATH="/usr/local/sbin:$PATH"
-export PGPASSFILE=${HOME}/.pgpass
 
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"

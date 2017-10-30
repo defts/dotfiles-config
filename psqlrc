@@ -1,0 +1,10 @@
+\set QUIET 1
+\set PROMPT1 '%M:%[%033[1;31m%]%>%[%033[0m%] %n@%/%R%#%x '
+\set PROMPT2 ''
+\set HISTFILE ~/.psql_history- :HOST - :DBNAME
+\set HISTSIZE 2000
+\set COMP_KEYWORD_CASE upper
+\timing
+\x auto
+\pset null 'NULL'
+\unset QUIET

@@ -3,8 +3,15 @@
 \set PROMPT2 ''
 \set HISTFILE ~/.psql_history- :HOST - :DBNAME
 \set HISTSIZE 2000
-\set COMP_KEYWORD_CASE upper
+\set ON_ERROR_ROLLBACK interactive
+\set ON_ERROR_STOP on
 \timing
 \x auto
 \pset null 'NULL'
+\pset linestyle 'unicode'
+\pset unicode_border_linestyle single
+\pset unicode_column_linestyle single
+\pset unicode_header_linestyle double
+\pset pager always
+\setenv LESS '-iMFXSx4R'
 \unset QUIET
